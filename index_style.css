@@ -1,0 +1,241 @@
+body 
+{	
+	font-family: Verdana;
+	margin: 0;
+	padding: 0;
+	background-color: #00004d;/*#5CDB95; 3939ad; */
+}
+
+#header{
+	z-index: 8;
+	width: 100%;
+	top: 0;
+	position: fixed;
+	background-color: #00004d;
+	display: flex;
+	font-size : 20px;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.heading{
+	font-weight: bold;
+	color : white;
+	flex-direction: row;
+	list-style-type: none;
+}
+.heading li{
+	padding: 10px 20px 10px 20px;	
+}
+.menu_bar{
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+}
+.menu_bar li{
+	/*padding: 10px 20px 10px 20px;	*/
+	text-align: center;
+	text-decoration: none;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	margin:0 15px 0 15px;
+	padding: 0 10px 0 10px;
+}
+
+.menu_bar li a{
+	text-decoration: none;
+	position: relative;
+	font-size:20px;
+	color:orange;
+}
+.menu_bar li:hover{
+	background-color:#ffc851;
+	color:white;
+	box-shadow: 0 0 30px #85b9ea;
+}
+.menu_bar li:hover a{
+	color: white;
+}
+
+/*******************************************/
+#content{
+	position: relative;
+}
+.mid_head{
+	background-image: url(../img/A.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.mid_head h1{
+	color : white;
+	font-size : 40px;
+	margin:0 0 0 0;
+	line-height: 75%;
+}
+.mid_head h2{
+	color : white;
+	text-align: justify;
+	text-justify:inter-character;
+	font-size:25px;
+}
+.about{
+	position: relative;
+}
+.about h2{
+	color : orange;
+	font-size : 30px;
+	padding-left : 20px;
+}
+.para {
+	padding-left : 20px;
+	padding-right : 5px;
+	color : orange;
+	font: 18px Arial, sans-serif;
+}
+.web_reg h3{
+	padding-left : 20px;
+	padding-right : 40px;
+	font-size : 20px;
+	color : white;
+	text-shadow : 2px 2px black;
+	
+}
+#btn{
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.img3{
+	min-height: 500px;
+	background-image: url(../img/A.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.footer{
+	box-shadow: inset 0px 2px 5px #00004d;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100px;
+	background-color: #3939ad;
+}
+.name1{
+	color: white;
+	padding-left:50px;
+	line-height: 0;
+}
+.name1 h1{
+	font-size: 30px;
+	background-color: red;
+}
+.name1 h3{
+	font-size: 12px;
+}
+.name2{
+	color: white;
+	font: 11px verdana;
+	padding-right:50px;
+	line-height: 0;
+}
+
+/***********/
+.carousel_container{
+	background-image: url(../img/A.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 110vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	overflow: hidden;
+}
+.carousel{
+	display: flex;
+	position: relative;
+	animation: slide 10s infinite ease;
+}
+@keyframes slide{
+	0%{left: 0;}
+	20%{left: 0;}
+	25%{left: -100vw;}
+	45%{left: -100vw;}
+	50%{left: -200vw;}
+	70%{left: -200vw;}
+	75%{left: -100vw;}
+	95%{left: -100vw;}
+	100%{left: 0;}
+}
+.carousel img{
+	height: 90vh;
+	width: 100vw;
+}
+/*****************/
+.mid_container{
+	position: relative;
+	top: 60px;
+	height: 100vh;
+	background-image: url(../img/A.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+.c_content{
+	background-color:#00004d;;
+	margin:30px 15% 0 15%;
+	padding: 0 0 0 50px;
+	position: relative;	
+	color: orange;
+	position: relative;
+	height: 100%;
+}
+.c_content h1{
+	font-size: 50px;
+	color: white;
+}
+.c_content h2{
+	font-size: 30px;
+	color: white;
+}
+.c_content ul{
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+.c_content ul li{
+	position: relative;
+	list-style-type: none;
+	line-height: 50px;
+	padding-left: 30px;
+}
+.c_content ul li::before{
+	content:'';
+	position: absolute;
+	top:27%;
+	left:0;
+	right: 0;
+	bottom: 0;
+	height: 25px;
+	width:25px;
+	transition: 0.12s ease-out;
+	background-image:url(../img/1email.png);
+	background-size: cover;
+}
